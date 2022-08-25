@@ -1,0 +1,10 @@
+
+.filter_top{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.filterClearBtn{
+    cursor: pointer;
+    height: 2rem;
+}

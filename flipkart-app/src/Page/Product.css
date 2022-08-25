@@ -1,0 +1,9 @@
+.product_page{
+    display: flex;
+}
+.aside_container{
+    flex: 1
+}
+.center_container{
+    flex: 4
+}
