@@ -9,7 +9,8 @@ const FilterContextProvider = ({children}) => {
         Sortby: "",
         brand: [],
         ideal: [],
-        size: []
+        size: [],
+        searchQuery: ""
     })
     return (
         <FilterContext.Provider value={{filterState,filterDispatch}}>

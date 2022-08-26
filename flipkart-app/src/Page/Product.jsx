@@ -9,16 +9,20 @@ import { categoryBrandFilter } from '../Utils/categoryBrandFilter';
 import { categoryIdealFilter } from '../Utils/categoryIdealFilter';
 import { categorySizeFilter } from '../Utils/categorySizeFilter';
 import ProdCard from '../Component/ProdCard/ProdCard';
+import { searchFilter } from '../Utils/searchFilter';
 
 
 
 const Product = () => {
   const {filterState} = useFilter();
-   const {brand,ideal,size} = filterState;
+   const {brand,ideal,size,searchQuery} = filterState;
  const filterBrand =  categoryBrandFilter(brand,ProductData);
  const filterIdeal =  categoryIdealFilter(ideal,filterBrand);
  const filterSize = categorySizeFilter(size,filterIdeal)
- const sortData =   SortProduct(filterState,filterSize)
+ const serchFilterProd = searchFilter(searchQuery,filterSize)
+ const sortData =   SortProduct(filterState,serchFilterProd);
+ 
+
 
 
   return (
