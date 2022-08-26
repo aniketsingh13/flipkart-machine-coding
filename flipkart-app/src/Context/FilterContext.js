@@ -7,15 +7,9 @@ const FilterContext = createContext();
 const FilterContextProvider = ({children}) => {
     const [filterState,filterDispatch] = useReducer(FilterReducer,{
         Sortby: "",
-        men: false,
-        women: false,
-        Puma: false,
-        Addidas: false,
-        HRX : false,
-        Xlarge: false,
-        large : false,
-        medium: false,
-        small : false
+        brand: [],
+        ideal: [],
+        size: []
     })
     return (
         <FilterContext.Provider value={{filterState,filterDispatch}}>

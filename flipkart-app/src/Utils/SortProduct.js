@@ -2,12 +2,12 @@
 
 
 
-export const SortProduct = (sortbyPrice,data) => {
-     if(sortbyPrice === "low-to-high"){
+export const SortProduct = (filterState,data) => {
+     if(filterState.Sortby === "low-to-high"){
         return [...data].sort((a,b) => a.price - b.price )
      }
-     if(sortbyPrice === "high-to-low"){
+     if(filterState.Sortby === "high-to-low"){
         return [...data].sort((a,b) => b.price - a.price)
      }
-     return data
+     return data;
 }
