@@ -9,7 +9,7 @@ const Filter = () => {
     <div>
       <div className="filter_top">
         <h3>Filter</h3>
-        <button className="filterClearBtn">ClearAll</button>
+        <button className="filterClearBtn" onClick={() => filterDispatch({type: "CLEARALL"})}>ClearAll</button>
       </div>
 
       <div className="ml-l f-m mb-s">Ideal For: </div>

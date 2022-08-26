@@ -13,6 +13,13 @@ export const FilterReducer = (state, action) => {
             case "SIZE":
                 const updatedSize = state.size.includes(action.payload) ? state.size.filter((item)  => item !== action.payload) : [...state.size,action.payload]
                 return {...state,size: updatedSize}
+                case "CLEARALL":
+                  return {
+                    Sortby: "",
+                    brand: [],
+                    ideal: [],
+                    size: []
+                  }
     default:
       return state;
   }
