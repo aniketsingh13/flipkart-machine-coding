@@ -24,7 +24,7 @@
         price : 2500,
         ideal: "men",
         size: "large",
-        image: "https://res.cloudinary.com/aniket-singh/image/upload/v1661349823/Images/01d760eafaf54d25bb48aebb015823b8_9366_eqlmyg.webp",
+        image: "https://res.cloudinary.com/aniket-singh/image/upload/v1661510019/Images/xl-fj9216-adidas-original-imafw2k9s68czfpd_kv8ua8.webp",
       },
       {
         _id: 4,

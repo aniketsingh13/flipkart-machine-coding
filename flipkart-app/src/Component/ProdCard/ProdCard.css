@@ -1,0 +1,8 @@
+.prodCard_container{
+    height: 22rem;
+    width: 16rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}

@@ -8,6 +8,9 @@ import { SortProduct } from '../Utils/SortProduct';
 import { categoryBrandFilter } from '../Utils/categoryBrandFilter';
 import { categoryIdealFilter } from '../Utils/categoryIdealFilter';
 import { categorySizeFilter } from '../Utils/categorySizeFilter';
+import ProdCard from '../Component/ProdCard/ProdCard';
+
+
 
 const Product = () => {
   const {filterState} = useFilter();
@@ -25,12 +28,8 @@ const Product = () => {
             <div className='aside_container'>
              <Filter />
             </div>
-            <div className='center_container'>
-                {sortData.map((item) => (
-                
-                    <img key={item._id} src={item.image} alt={item.brand} width={200} height={200} />
-                 
-                ))}
+            <div className='center_container flex '>
+          { sortData.length ?   sortData.map(product =>  (<ProdCard key={product._id} Product={product}  />))  : <div>data not found</div> }
             </div>
         </div>
     </div>
